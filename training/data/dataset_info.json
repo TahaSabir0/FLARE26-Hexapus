@@ -1,0 +1,60 @@
+{
+  "flare_final_cls_rebal_full": {
+    "file_name": "flare_final_cls_rebal_full.jsonl",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "images"
+    }
+  },
+  "flare_final_multilabel_noavg_full": {
+    "file_name": "flare_final_multilabel_noavg_full.jsonl",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "images",
+      "system": "system"
+    }
+  },
+  "flare_final_counting_full": {
+    "file_name": "flare_final_counting_full.jsonl",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "images",
+      "system": "system"
+    }
+  },
+  "flare_final_detection_full": {
+    "file_name": "flare_final_detection_full.jsonl",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "images"
+    }
+  },
+  "flare_regmix_A5_dermacls_AB": {
+    "file_name": "flare_regmix_A5_dermacls_AB.jsonl",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "images"
+    }
+  },
+  "flare_final_reportgen": {
+    "file_name": "flare_final_reportgen.jsonl",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "images"
+    }
+  },
+  "flare_final_general": {
+    "file_name": "flare_final_general.jsonl",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "images": "images"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# FLARE-2026 Task-3 -- Qwen3.5-9B routed submission deps (v5 stack).
+# PINNED to the verified inference env (pip list 2026-09-05).
+# torch/torchvision are NOT listed: they ship with the cu128 base image
+# (pytorch/pytorch:2.11.0-cuda12.8-cudnn9-runtime == torch 2.11.0+cu128).
+# Reinstalling torch would risk a CUDA mismatch with bitsandbytes.
+#
+# gliclass==0.1.20 is installed FIRST in the Dockerfile (it pulls its own transformers);
+# this file then pins transformers==5.16.1 on top (the version the 9B adapters + router
+# were verified under).
+transformers==5.16.1
+tokenizers==0.23.1
+peft==0.18.1
+bitsandbytes==0.50.2
+accelerate==1.14.0
+safetensors==0.8.0
+numpy==2.5.2
+pillow==12.3.0
+einops==0.8.2
+sentencepiece==0.2.2
+tqdm==4.67.1

@@ -1,0 +1,15 @@
+# Inference/eval stack (identical pins to docker/requirements.txt; torch 2.11.0+cu128 installed separately)
+transformers==5.16.1
+tokenizers==0.23.1
+peft==0.18.1
+bitsandbytes==0.50.2
+accelerate==1.14.0
+safetensors==0.8.0
+numpy==2.5.2
+pillow==12.3.0
+einops==0.8.2
+sentencepiece==0.2.2
+tqdm==4.67.1
+gliclass==0.1.20
+scikit-learn
+# Training additionally needs LLaMA-Factory v0.9.5 with training/lf_v095_tf5_compat.patch applied (see README).

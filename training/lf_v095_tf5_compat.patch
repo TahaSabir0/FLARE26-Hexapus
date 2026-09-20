@@ -1,0 +1,18 @@
+diff --git a/src/llamafactory/model/model_utils/checkpointing.py b/src/llamafactory/model/model_utils/checkpointing.py
+index 0ba7ec96..f167b237 100644
+--- a/src/llamafactory/model/model_utils/checkpointing.py
++++ b/src/llamafactory/model/model_utils/checkpointing.py
+@@ -107,7 +107,13 @@ def _gradient_checkpointing_enable(
+     self: "PreTrainedModel",
+     gradient_checkpointing_kwargs: Optional[dict[str, Any]] = None,
+     use_unsloth_gc: bool = False,
++    every_n_layers: int = 1,
+ ) -> None:
++    # transformers>=5.16 Trainer passes every_n_layers (trainer.py:1408); 1 == checkpoint
++    # every layer == this function's existing behavior. Reject anything else rather than
++    # silently training with different checkpointing semantics.
++    if every_n_layers != 1:
++        raise NotImplementedError(f"every_n_layers={every_n_layers} unsupported by LF shim")
+     r"""Activates gradient checkpointing for the current model.
+ 
+     Modification of the original method to enable gradient checkpointing for block-wise optimizer.

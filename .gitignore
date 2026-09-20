@@ -1,0 +1,6 @@
+models/
+training/data/*.jsonl
+saves/
+outputs/
+__pycache__/
+*.pyc
