@@ -1,8 +1,7 @@
 # Multimodal Medical Image Parsing with Task-Specific Low-Rank Adapters
 
 This repository is the official implementation of *Multimodal Medical Image Parsing with
-Task-Specific Low-Rank Adapters* (FLARE 2026 Task 3, team **Hexapus**, MBZUAI BioMedIA). It builds on
-[ME-VLIP](https://github.com/BioMedIA-MBZUAI/ME-VLIP) (FLARE 2025).
+Task-Specific Low-Rank Adapters* (FLARE 2026 Task 3, team **Hexapus**, MBZUAI BioMedIA).
 
 One frozen 4-bit **Qwen3.5-9B** backbone answers every question. A question-only **GLiClass**
 router picks one of six task-specific **QLoRA adapters** (classification, multi-label
@@ -130,8 +129,8 @@ from the A∪B siblings of these adapters, never from the all-data ones.
 
 **Router.** The GLiClass task classifier
 [`MaiAShaaban/flare-gliclass-small-v1.0`](https://huggingface.co/MaiAShaaban/flare-gliclass-small-v1.0)
-(DeBERTa-v3-small encoder) from ME-VLIP is reused without retraining. It reads the question text
-only; confidence below 0.3 falls back to the general adapter.
+(DeBERTa-v3-small encoder) is reused without retraining. It reads the question text only;
+confidence below 0.3 falls back to the general adapter.
 
 Trained models: the seven adapters, the base model and the router are packaged in the public
 container (link above). Train and inference resolution must match per route.
@@ -241,7 +240,6 @@ requests are welcome.
 
 ## Acknowledgement
 
-We thank the FLARE 2026 organizers and the contributors of the public datasets, the authors of
-[ME-VLIP](https://github.com/BioMedIA-MBZUAI/ME-VLIP) whose design and router this work builds on,
-and the maintainers of [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory),
+We thank the FLARE 2026 organizers and the contributors of the public datasets, and the
+maintainers of [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory),
 [GLiClass](https://github.com/Knowledgator/GLiClass) and [CRIMSON](https://arxiv.org/abs/2603.06183).
