@@ -18,7 +18,7 @@ pipeline_tag: image-text-to-text
 This repository hosts the exact Docker image submitted by team **Hexapus** (MBZUAI BioMedIA) to
 the testing phase of [FLARE 2026 Task 3, Multimodal Model for Medical Image Parsing](https://www.codabench.org/competitions/7151/).
 Paper: *Multimodal Medical Image Parsing with Task-Specific Low-Rank Adapters* (MICCAI 2026 FLARE
-Challenge proceedings). Code: **[CODE_REPO_URL]**.
+Challenge proceedings). Code: [github.com/TahaSabir0/FLARE26-Hexapus](https://github.com/TahaSabir0/FLARE26-Hexapus).
 
 | File | Size | MD5 |
 | :--- | ---: | :--- |
