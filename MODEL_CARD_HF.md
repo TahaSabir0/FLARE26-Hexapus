@@ -79,7 +79,7 @@ only. It is not a medical device and must not be used for clinical decision maki
 
 ## Licenses
 
-The image redistributes Qwen3.5-9B (Apache 2.0, Alibaba Cloud), the GLiClass router from ME-VLIP,
+The image redistributes Qwen3.5-9B (Apache 2.0, Alibaba Cloud), the GLiClass router,
 and our adapters and code (Apache 2.0). Dataset licenses are those of the FLARE 2026 organizers.
 
 ## Citation
